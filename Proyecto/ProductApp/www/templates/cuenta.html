@@ -1,0 +1,14 @@
+<ion-view title="Cuenta" id="page3">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="cuenta-list2">
+            <ion-item id="cuenta-list-item10">Email: {{detail.email}}</ion-item>
+            <ion-item id="cuenta-list-item11">Nombre: {{detail.firstname}}</ion-item>
+            <ion-item id="cuenta-list-item12">Apellido: {{detail.lastname}}</ion-item>
+            <ion-item id="cuenta-list-item5">Teléfono: {{detail.phone}}</ion-item>
+            <ion-item id="cuenta-list-item6">Contraseña: {{detail.password}}</ion-item>
+        </ion-list>
+        <a id="cuenta-button3" class=" button button-positive  button-block " href="#/side-menu21/page13/{{ detail.email }}">Editar</a>
+        <button id="cuenta-button4" class=" button button-positive  button-block button-outline " ng-click="userClose()">Cerrar Sesión</button>
+        <button id="cuenta-button19" class=" button button-assertive  button-block button-clear " ng-click="userDelete()">Eliminar cuenta</button>
+    </ion-content>
+</ion-view>
